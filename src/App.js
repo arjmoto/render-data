@@ -2,8 +2,6 @@
 import React, { Component} from 'react';
 import Title from './components/Title';
 import Item from './components/Item';
-import List from './components/List';
-import { filter, includes, orderBy as funcOrderBy, remove, reject } from 'lodash';
 class App extends Component {
   constructor(){
     super();
@@ -32,10 +30,7 @@ class App extends Component {
   }
 
   render(){
-  
-    
     const items = this.items;
-    console.log(this.items);
     const elmItem = items.map((item, index) =>{
       return (
         <Item 
